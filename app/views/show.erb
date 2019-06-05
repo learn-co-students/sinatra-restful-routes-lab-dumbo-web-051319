@@ -1,0 +1,10 @@
+<h2><img src="/images/xiao_la_ji.gif" alt=""></h2>
+<h1>Grandma's <%= @recipe.name %></h1>
+<h3>Ingredients: <%= @recipe.ingredients %> </h3>
+<h3>Ingredients: <%= @recipe.cook_time %> </h3>
+
+
+<form action="/recipes/<%= @recipe.id %>" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <button type="submit" name="delete" id="delete">Grandma Doesn't Want it</button>
+</form>
